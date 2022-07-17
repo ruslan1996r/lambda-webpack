@@ -6,7 +6,7 @@
  "scripts": {
   "start": "webpack serve --config webpack.config.js",
   "build": "webpack",
-  "test": "webpack && node dist/main.js",
+  "test": "webpack && node dist/handler.js",
   "prod": "webpack --mode production"
  },
  "keywords": [],

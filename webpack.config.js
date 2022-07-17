@@ -46,7 +46,7 @@ module.exports = {
   context: path.resolve(__dirname, "src"),
   mode: "development",
   entry: {
-    main: "./handler.js",
+    handler: "./handler.js",
   },
   output: {
     // filename: "[name].js",

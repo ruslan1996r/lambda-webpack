@@ -13,11 +13,13 @@ class Test {
 
 const test = new Test()
 
-exports.handler = (event) => {
+const handler = (event) => {
   const response = {
     statusCode: 200,
     body: JSON.stringify(event),
     printHello: test.printHello(),
   };
   return response;
-};
+}
+
+exports.handler = handler
