@@ -17,7 +17,12 @@ jobs:
       uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
-    # - run: npm ci
+    - run: npm ci
+
+    - name: Build
+      uses: actions/setup-node@v3
+    - run: npm run build
+    
     - name: serverless deploy
       uses: serverless/github-action@v3.1
       with:
