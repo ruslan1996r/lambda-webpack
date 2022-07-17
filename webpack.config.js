@@ -42,6 +42,7 @@ const rules = () => {
 
 
 module.exports = {
+  target: 'node',
   context: path.resolve(__dirname, "src"),
   mode: "development",
   entry: {
