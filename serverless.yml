@@ -6,7 +6,7 @@ frameworkVersion: '3.21.0'
 provider:
   name: aws
   runtime: nodejs12.x
-  # lambdaHashingVersion: '20201221'
+  lambdaHashingVersion: '20201221'
   region: us-east-2
 
 plugins:
@@ -17,7 +17,8 @@ plugins:
 
 functions:
   my-test:
-    handler: src/handler.handler
+    # handler: src/handler.handler
+    handler: handler.handler
     events:
       - http:
           path: /
