@@ -17,12 +17,12 @@ console.log("test", test)
 const handler = async (event) => {
   const response = {
     statusCode: 200,
+    testMsg: "hello!",
     body: JSON.stringify(event),
-    // printHello: test.printHello(),
+    printHello: test.printHello(),
   };
   return response;
 }
 
-console.log(handler())
-
-exports.handler = handler
+// exports.handler = handler
+export { handler }

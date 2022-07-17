@@ -23,7 +23,7 @@ plugins:
 functions:
   my-test:
     # handler: src/handler.handler
-    handler: dist/handler.handler
+    handler: handler.handler
     url: true
     events:
       - http:
