@@ -12,14 +12,17 @@ class Test {
 }
 
 const test = new Test()
+console.log("test", test)
 
 const handler = (event) => {
   const response = {
     statusCode: 200,
     body: JSON.stringify(event),
-    printHello: test.printHello(),
+    // printHello: test.printHello(),
   };
   return response;
 }
+
+console.log(handler())
 
 exports.handler = handler
