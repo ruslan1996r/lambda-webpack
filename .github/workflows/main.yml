@@ -21,7 +21,7 @@ jobs:
 
     - name: Build
       uses: actions/setup-node@v3
-    - run: npm run build
+    - run: npm run prod
     
     - name: serverless deploy
       uses: serverless/github-action@v3.1
