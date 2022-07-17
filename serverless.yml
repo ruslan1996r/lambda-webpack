@@ -6,8 +6,13 @@ frameworkVersion: '3.21.0'
 provider:
   name: aws
   runtime: nodejs12.x
+  environment: ${self:custom.settings}
   lambdaHashingVersion: '20201221'
   region: us-east-2
+  iam:
+  role:
+    statements:
+    - Effect: "Allow"
 
 plugins:
   - serverless-webpack
