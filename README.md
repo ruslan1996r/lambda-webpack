@@ -12,3 +12,5 @@ App: `aws-node-rest-api-project`
   - copy `access` and `secret` keys
 3. Add `access` and `secret` keys in github repository secrets
 4. Add secret keys to github workflow
+5. Push code to main
+6. In AWS, select the region specified for the lambda 
