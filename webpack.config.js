@@ -49,7 +49,8 @@ module.exports = {
     main: "./handler.js",
   },
   output: {
-    filename: "[name].js",
+    // filename: "[name].js",
+    filename: "handler.js",
     path: path.resolve(__dirname, "dist"),
   },
   resolve: {
