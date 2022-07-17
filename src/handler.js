@@ -14,7 +14,7 @@ class Test {
 const test = new Test()
 console.log("test", test)
 
-const handler = (event) => {
+const handler = async (event) => {
   const response = {
     statusCode: 200,
     body: JSON.stringify(event),
