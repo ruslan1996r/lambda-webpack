@@ -9,10 +9,10 @@ provider:
   # environment: ${self:custom.settings}
   lambdaHashingVersion: '20201221'
   region: us-east-2
-  iam:
-    role:
-      statements:
-      - Effect: "Allow"
+  # iam:
+  #   role:
+  #     statements:
+  #     - Effect: "Allow"
 
 plugins:
   - serverless-webpack
@@ -24,6 +24,7 @@ functions:
   my-test:
     # handler: src/handler.handler
     handler: dist/handler.handler
+    url: true
     events:
       - http:
           path: /

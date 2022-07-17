@@ -11,14 +11,11 @@ class Test {
 
 const test = new Test()
 
-test.printHello()
-
 exports.handler = async (event) => {
-  console.log('event', event)
-  // TODO implement
   const response = {
     statusCode: 200,
-    body: JSON.stringify('TEST_PAYLOAD: '),
+    body: JSON.stringify(event),
+    printHello: test.printHello(),
   };
   return response;
 };
