@@ -6,7 +6,7 @@ frameworkVersion: '3.21.0'
 provider:
   name: aws
   runtime: nodejs12.x
-  environment: ${self:custom.settings}
+  # environment: ${self:custom.settings}
   lambdaHashingVersion: '20201221'
   region: us-east-2
   iam:
