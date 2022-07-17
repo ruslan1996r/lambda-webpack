@@ -5,13 +5,15 @@ class Test {
   constructor() {}
 
   printHello() {
-    console.log('HELLO, ZHORA!' + getTest() + myTSString);
+    const str = 'HELLO, ZHORA!' + getTest() + myTSString
+
+    return str
   }
 }
 
 const test = new Test()
 
-exports.handler = async (event) => {
+exports.handler = (event) => {
   const response = {
     statusCode: 200,
     body: JSON.stringify(event),

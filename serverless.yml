@@ -27,5 +27,5 @@ functions:
     url: true
     events:
       - http:
-          path: /
+          path: /test
           method: get
