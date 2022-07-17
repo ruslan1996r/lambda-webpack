@@ -10,9 +10,9 @@ provider:
   lambdaHashingVersion: '20201221'
   region: us-east-2
   iam:
-  role:
-    statements:
-    - Effect: "Allow"
+    role:
+      statements:
+      - Effect: "Allow"
 
 plugins:
   - serverless-webpack
