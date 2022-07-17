@@ -1,0 +1,18 @@
+service: lambda-webpack
+
+frameworkVersion: '2'
+
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  lambdaHashingVersion: '20201221'
+  region: us-east-1
+
+functions:
+  my-test:
+    handler: src/handler.handler
+    events:
+      - http:
+          path: /
+          method: get
