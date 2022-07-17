@@ -9,6 +9,12 @@ provider:
   # lambdaHashingVersion: '20201221'
   region: us-east-2
 
+plugins:
+  - serverless-webpack
+
+# package:
+#   individually: true
+
 functions:
   my-test:
     handler: src/handler.handler
