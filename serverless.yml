@@ -1,13 +1,13 @@
 service: lambda-webpack
 
-frameworkVersion: '2'
+frameworkVersion: '3.21.0'
 
 
 provider:
   name: aws
   runtime: nodejs12.x
-  lambdaHashingVersion: '20201221'
-  region: us-east-1
+  # lambdaHashingVersion: '20201221'
+  region: us-east-2
 
 functions:
   my-test:
